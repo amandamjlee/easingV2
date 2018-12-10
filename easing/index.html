@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+	body{
+
+		margin: 0px;
+	}
+
+	h2{
+		font-family: "helvetica";
+		text-align: center;
+		font-size: 16px;
+	}
+
+	#container{
+
+		position: absolute;
+		padding: 10px;
+		width: 100%;
+		margin-top: 10px;
+
+	}
+
+	#title{
+
+		margin: 10px;
+
+
+		padding: 1%;
+		display: inline;
+		font-family: "helvetica";
+		font-size: 55px;
+
+		
+	}
+
+	#sub-title{
+		margin: 0px;
+		padding: 0%;
+		font-size: 14px;
+		display: inline;
+		font-family: "helvetica";
+	}
+
+	.option{
+		list-style-type:none;
+		padding: 10px;
+
+	}
+	.button{
+
+		border: none;
+		font-size: 12px;
+		background: transparent;
+	}
+
+	
+
+	#list{
+
+		padding: 0px;
+		text-align: center;
+
+
+	}
+
+	#options{
+
+		float: right;
+		margin-right: 60px;
+		margin-top: 20px;
+
+
+	}
+
+	#mySelect{
+
+		display: block;
+		font-size: 15px;
+		/*width: 80px;*/
+		height:25px;
+		border: none;
+		margin: 0 auto;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	#textBox{
+
+		font-size: 11px;
+		font-family: "helvetica";
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+		 line-height: 1.5;
+
+	}
+
+	#type{
+
+	 padding-bottom: 10px;
+	}
+
+
+
+	</style>
+	
+</head>
+<body>
+	<div id="container">
+		
+		<h1 id="title">easing</h1>
+		<h3 id="sub-title"><a href="https://greensock.com/tweenmax">TweenMax.js</a> + <a href="https://threejs.org">Three.js</a></h3>
+		
+
+		<div id= "options">
+
+		<h2 id="type">TYPE</h2>	
+		<select id="mySelect">
+		  <option value="EaseIn">easeIn</option>
+		  <option value="EaseOut">easeOut</option>
+		  <option value="EaseInOut">easeInOut</option> 
+		</select>
+
+		<ul id="list">
+			<li class="option"><button class="button" id="Power">Power</button></li>
+			<li class="option"><button class="button" id="Sine">Sine</button></li>
+			
+		
+			<li class="option"><button class="button" id="Circ">Circ</button></li>
+			<li class="option"><button class="button" id="Expo">Expo</button></li>
+
+			<li class="option"><button class="button" id="Back">Back</button></li>	
+			<li class="option"><button class="button" id="Elastic">Elastic</button></li>
+			<li class="option"><button class="button" id="Bounce">Bounce</button></li>
+		
+		<br><br>	
+		<h2>EXAMPLE</h2>
+
+		<ul id="list">
+		<li class="option"><button class="button" id="BouncingBall">Bouncing Ball</button>
+		</li>
+		<li class="option"><button class="button" id="Water">Floating </button>
+		</li>
+		<li class="option"><button class="button" id="Carstop">Car stopping</button></li>
+		<li class="option"><button class="button" id="Falling">Falling leaves</button>
+		</li>
+
+		</ul>	
+
+		</div>
+
+
+		
+
+		</div>
+		<div id="textBox">
+			
+	
+	</div>
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script type="text/javascript" src="js/OrbitControls.js"></script>
+	<script type="text/javascript" src="js/tween.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.js"></script>
+	<script type="text/javascript" src="js/WebGL.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
